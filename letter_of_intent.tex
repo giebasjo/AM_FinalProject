@@ -1,0 +1,69 @@
+\title{AM Final Project: Letter of Intent}
+\author{
+	Lucas Duarte Bahia, Daniel Rojas Coy \\
+	Harveen Oberoi, Jordan Giebas
+}
+\date{\today}
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage[export]{adjustbox}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+%\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{caption}
+\captionsetup[figure]{font=small}
+\usepackage{textpos}
+
+\begin{document}
+\maketitle
+
+The purpose of this letter is to indicate two of the topics our group is interested in pursuing for our final project in Asset Management (\textit{MSCF: 46979}). Specifically, our group has considered each of the suggested topics and have decided to pursue either Topic 1 (\textit{Factor Timing}) or Topic 3 (\textit{Capacity of a Trading Strategy}). Our most preferred topic is Topic 3. The paragraphs below summarize the main goals we aim to accomplish, as well as our methodology for accomplishing them.
+
+\section{Topic 3: Capacity of a Trading Strategy}
+
+Our high-level goal of this project is to determine how transcation costs impact particular factor-based investment strategies, and how to effectively manage these transaction costs. We will initially explore building an investment strategy around the \textbf{BAB?} risk factor with portfolio rebalancing occuring on a \textbf{weekly? the AQR BAB factor data doesn't seem to have weekly, although we could aggregate the daily data to arrive at weekly data} basis without any transaction costs. Our portfolio will be a \textbf{benchmark-neutral long-short portfolio}. Additionally, and if time permits, we would also like to examine another risk factor with the same rebalancing frequency as to compare and contrast with the hopes of later gaining more insight as to how transaction costs affect factor-based strategies across various factors. After the construction of the initial strategy is complete, we will then turn our attention to understanding the impact of proportional transaction costs at a variety of levels (i.e. 10 bps, 20 bps, etc.) In doing so, we will determine the transaction cost level at which our premium diminishes. With that preliminary analysis of transaction costs complete, we will then turn our attention to varying, for example, the frequency with which we rebalance our portfolio and enforce \textbf{churn? turnover? I just don't want to say turnover because I don't want to keep repeating his words} constraints. \\
+The data requirements for this project will not be a problem, as the \textbf{BAB?} factor data is easily obtained at the AQR Data Set Library$^{1}$. \textbf{Once we decide on all the details we can then discuss the exact time period with which will perform this analysis and some other data considerations}
+
+\section{Topic 1: Factor Timing}
+
+Our high-level goal for this project is to determine the extent to which factor-timing is possible, as well as the ways in which it may be used to gain a profitable edge when investing. To this end, we will consider momentum and \textbf{BAB? can we use this here? this is an AQR thing, and they're on the other side of the debate} as the factors we will like to time. In order to test whether or not we are able to time these factors in a statistically significant manner, for each factor we will attempt to predict the factor returns over the following period by considering the following three \textit{Timing Variables}:
+\begin{itemize}
+  \item The factor's recent performance over a $N$-period window ($N$ will be chosen to minimize squared error with respect to the factor's returns)
+  \item The performance of the general equity market
+  \item The growth rate of industrial production
+\end{itemize}
+
+Note that this last timing variable was chosen based on the research conducted by Liu and Zhang (2008)$^2$. With these timing variables, we will systematically perform linear regression regressing with the factor's excess returns as the response and the above timing variables as the model features to predict the excess factor returns in the subsequent period. If time permits and the findings from the described analysis seem suitable, we will then use the results to build a factor-based investment strategy around these two factors in which we use the timing variables to forecast the expected excess return of the factors in the next period, and if the forecast is attractive, we will attempt to buy-low and sell-high as Arnott argues. . \\
+Once again, the data will be easy to obtain. The momentum data can be obtained again from $[1]$ (AQRs Data Set Library), and the \textbf{BAB??} data can be obtained there as well. Regarding the timing variables, the first is already covered. For the second, we will use the excess returns (over the risk-free rate) of the S\& P500 as a proxy (where the Federal Funds rate is the proxy for the risk-free rate). And for the third, we will use the index of industry production from the Feder Reserve bank of St. Louis as a proxy for the industrial production growth rate. \textbf{Once we decide on all the details we can then discuss the exact time period with which will perform this analysis and some other data considerations}
+
+\begin{thebibliography}{9}
+\bibitem{1}
+AQR Data Sets,
+\\\texttt{https://www.aqr.com/Insights/Datasets/}
+
+\bibitem{2}
+Liu and Zhang (2008),
+\\\texttt{https://ssrn.com/abstract=1027214}
+\end{thebibliography}
+
+\end{document}
