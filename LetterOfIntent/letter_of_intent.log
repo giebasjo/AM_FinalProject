@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 NOV 2018 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 NOV 2018 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,30 +734,28 @@ your preamble.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-[1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
- [2]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+ [1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
 Package caption Warning: Unused \captionsetup[figure] on input line 34.
 See the caption package documentation for explanation.
 
 [3] (./letter_of_intent.aux) ) 
 Here is how much of TeX's memory you used:
- 23864 strings out of 492995
- 606236 string characters out of 6132704
+ 23863 strings out of 492995
+ 606221 string characters out of 6132704
  766810 words of memory out of 5000000
- 26989 multiletter control sequences out of 15000+600000
- 10142 words of font info for 37 fonts, out of 8000000 for 9000
+ 26988 multiletter control sequences out of 15000+600000
+ 9835 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,96p,1485b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,96p,1209b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
@@ -767,7 +765,7 @@ amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt12.pfb>
-Output written on letter_of_intent.pdf (3 pages, 91325 bytes).
+Output written on letter_of_intent.pdf (3 pages, 87644 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
